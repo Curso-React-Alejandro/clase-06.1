@@ -1,5 +1,6 @@
 import Button from "./button.js";
 import Imagen from "./imagen.js";
+import Sound from "./sound.js";
 
 // Obtengo el elemento del DOM, el espacio dondese va a renderizar el botón
 let myDiv = document.querySelector("#myApp");
@@ -23,4 +24,13 @@ myDiv.innerHTML += myImagen.render();
 myDiv.innerHTML += myImagen.render();
 
 myDiv.innerHTML += myImagen.render();
+
+
+// ------------------ Sonido ------------------
+
+// https://www.w3schools.com/tags/horse.ogg
+
+let mySound = new Sound("./data/sound_OK.mp3");
+
+myDiv.innerHTML += mySound.render();
 
