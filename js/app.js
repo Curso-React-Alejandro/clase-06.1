@@ -1,6 +1,7 @@
 import Button from "./button.js";
 import Imagen from "./imagen.js";
 import Sound from "./sound.js";
+import List from "./list.js";
 
 // Obtengo el elemento del DOM, el espacio dondese va a renderizar el botón
 let myDiv = document.querySelector("#myApp");
@@ -34,3 +35,11 @@ let mySound = new Sound("./data/sound_OK.mp3");
 
 myDiv.innerHTML += mySound.render();
 
+
+// ------------------ List ------------------
+
+const listItems = ["item 1", "item 2", "item 3"];
+
+let myList = new List(listItems);
+
+myDiv.innerHTML += myList.render();
