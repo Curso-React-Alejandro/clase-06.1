@@ -1,3 +1,5 @@
+// Creamos funciones para renderizar los elementos.
+
 export default function render() {
     return `<button>${this.text}</button>`;
 }
